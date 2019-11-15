@@ -2,185 +2,323 @@
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home | Salted Caramel</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Main Stylesheeet -->
-    <link rel="stylesheet" href="css/Style.css">
-    <!-- Slideshow Styelsheet -->
-    <link rel="stylesheet" href="css/slider.css">
-    <!-- Website Icon -->
-    <link rel="icon" href="images/preferences-web-browser-cookies.png">
-    <!-- Font Awesome -->
-<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">-->
-    <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Style.css">
+    <link href="fontawesome-free/css/all.min.css" rel="stylesheet">
 </head>
+<!-- data-spy="scroll" data-target="#navbar2"-->
 
-<body id="begin">
-    <!-- Header Section -->
+<body data-offset="0">
     <header class="main-header fullBackground">
-        <!-- Nav Bar -->
-        <div id="navbar" class="topnav">
-            <img class="navImg" src="images/preferences-web-browser-cookies.png">
-            <a class="navhead" href="register.html"> Register For Training</a>
-            <div class="navigation_right">
-                <!--                <a class="active" href="">Home</a>-->
-                <a id="ser" class="navitems js-scroll-trigger" href="#services">Services</a>
-                <a id="por" class="navitems js-scroll-trigger" href="#portfolio">Portfolio</a>
-                <a class="navitems js-scroll-trigger" href="#aboutus">About Us</a>
-                <a class="navitems js-scroll-trigger" href="#contactus">Contact Us</a>
-                <a href="javascript:void(0);" class="icon">
-                    <i id="dropbtn" class="fa fa-bars dropbtn" onclick="myFunction()"></i>
-                </a>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Salted Caramel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navEx" aria-controls="navEx" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navEx">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactus">Contact us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link text-white">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-md navbar-light" id="navbar2">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Salted Caramel</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navEx2" aria-controls="navEx2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navEx2">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#services">Services</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#contactus">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="header ml-4 ml-md-0 col-md-5 col-10 text-white">
+                    <h1 class="display-4">Salted <br> Caramel</h1>
+                    <p>We deal in all kinds of Catering Services including Baking and Cooking of all types of Local and International dishes. </p>
+                </div>
+                <div class="header2 ml-4 ml-md-0 col-md-2 col-2 text-white">
+                    <a class="btn btn_learn">Learn more</a>
+                </div>
             </div>
         </div>
-        <div id="myDropdown" class="dropdown-content">
-            <a id="drop1" href="#services" class="js-scroll-trigger">Services</a>
-            <a id="drop2" href="#portfolio" class="js-scroll-trigger">Portfolio</a>
-            <a id="drop3" href="#aboutus" class="js-scroll-trigger">About Us</a>
-            <a id="drop4" href="#contactus" class="js-scroll-trigger">Contact Us</a>
+
+        <div class="separator separator-bottom separator-skew zindex-100">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
         </div>
-        <h1 class="caption">Salted Caramel</h1>
-        <h3 class="caption2">Professional Catering and Event Management Services.</h3>
-        <div class="center_btn"><a href="#services" class="btn js-scroll-trigger">Find Out More</a></div>
 
     </header>
 
-    <section id="services">
+    <section class="section section-lg pt-lg-0" id="services">
         <div class="container">
-            <h2 class="service_text">We've got what you need!</h2>
-            <hr>
-            <p class="service_p">
-                We deal in all kinds of Catering Services including Baking and Cooking of all types of Local and International dishes. We also offer professional training services.
-            </p>
-        </div>
-        <div id="service-boxes">
-            <div class="service_box">
-                <i class="fas fa-5x fa-users"></i>
-                <h3>Customer Satisfaction</h3>
-                <p>
-                    We aim towards giving our customers a satisfying experience
-                </p>
-            </div>
-            <div class="service_box">
-               <i class="fas fa-5x fa-user-clock"></i>
-                <h3>On-Time Delivery</h3>
-                <p>
-                    We deliver your order to you On Time!
-                </p>
-            </div>
-            <div class="service_box">
-                <i class="fas fa-5x fa-truck"></i>
-                <h3>Location Delivery</h3>
-                <p>
-                    Pickup your order at any Location of your choice
-                </p>
-            </div>
-            <div class="service_box">
-                <i class="fas fa-5x fa-grin-hearts"></i>
-                <h3>Lovely Employees</h3>
-                <p>
-                    We have Lovely and Experienced Employees
-                </p>
-            </div>
-        </div>
-    </section>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-md-4 px-0" style="padding: 0 15px 0 0;">
+                            <div class="card" style="">
+                                <img class="card-img-top" src="Images/customer-review.png" alt="Card image cap" style="height: 60px; width: 60px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Customer Satisfaction</h5>
+                                    <p class="card-text"> We aim towards giving our customers a satisfying experience.</p>
+                                </div>
+                            </div>
+                        </div>
 
-    <section id="portfolio">
-        <h1 class="port_text">Portfolio</h1>
-        <div class="row">
-            <div class="column">
-                <div class="content">
-                    <div class="images">
-                        <img style="height: 50%;" src="images/portfolio/1.jpg" alt="Cake">
+                        <div class="col-md-4">
+                            <div class="card" style="">
+                                <img class="card-img-top" src="Images/delivery-truck.png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">On-Time Delivery</h5>
+                                    <p class="card-text"> We deliver your order to you On Time!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card ml-0 ml-md-3" style="">
+                                <img class="card-img-top" src="Images/delivery-truck%20(1).png" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Location Delivery</h5>
+                                    <p class="card-text">Pickup your order at any Location of your choice.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <h3>Round Cake</h3>
-                    <p>Two step butter iced cake, with chocolate dressing.</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <div class="images">
-                        <img src="images/portfolio/2.jpg" alt="Pasta">
-                    </div>
-                    <h3>Spaghetti</h3>
-                    <p>Pasta with cheese dressing and tomatoes by the side.</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="content">
-                    <div class="images">
-                        <img src="images/portfolio/3.jpg" alt="Cake">
-                    </div>
-                    <h3>Cheese Cake</h3>
-                    <p>Cheese cake with butter icing and Leaf.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="aboutus">
-        <hr>
-        <h1>Here's a little stuff about us</h1>
-        
+    <div id="portfolio">
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <hr>
+                <h2 class="port_text">Portfolio</h2>
+                <a class="btn btn_gallery text-white ml-auto">Go to Gallery</a>
+            </div>
+
+            <div class="nbs-flexisel-container mt-3">
+                <div class="nbs-flexisel-inner">
+                    <ul id="flexiselDemo1" class="nbs-flexisel-ul">
+                        <li class="nbs-flexisel-item">
+                            <div class="port_card card" style="width: 90%;">
+                                <div class="container2">
+                                    <img src="Images/portfolio/1.jpg" width="100" alt="Round cake">
+                                    <div class="content">
+                                        <h2>Round Cake</h2>
+                                        <p>Lorem ipsum..</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="nbs-flexisel-item">
+                            <div class="port_card card" style="width: 90%;">
+                                <div class="container2">
+                                    <img src="Images/portfolio/2.jpg" width="100" alt="Spaghetti">
+                                    <div class="content">
+                                        <h2>Spaghetti</h2>
+                                        <p>Lorem ipsum..</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nbs-flexisel-item">
+                            <div class="port_card card" style="width: 90%;">
+                                <div class="container2">
+                                    <img src="Images/portfolio/3.jpg" width="100" alt="Cheese cake">
+                                    <div class="content">
+                                        <h2>Cheese Cake</h2>
+                                        <p>Lorem ipsum..</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nbs-flexisel-item">
+                            <div class="port_card card" style="width: 90%;">
+                                <div class="container2">
+                                    <img src="Images/portfolio/header3.jpg" width="100" alt="Cup cakes">
+                                    <div class="content">
+                                        <h2>Cup cakes</h2>
+                                        <p>Lorem ipsum..</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nbs-flexisel-item">
+                            <div class="port_card card" style="width: 90%;">
+                                <div class="container2">
+                                    <img src="Images/portfolio/header5.jpg" width="100" alt="Flour">
+                                    <div class="content">
+                                        <h2>Flour</h2>
+                                        <p>Lorem ipsum..</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--   <div class="separator separator-bottom separator-skew zindex-100">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg">
+               <path
+            fill="#fff"
+            d="
+                M 0 67 
+                C 273,183
+                  822,-40
+                  1920,106 
+
+                V 359 
+                H 0 
+                V 67 
+                Z"> 
+        </path>
+            </svg>
+        </div> -->
+        </div>
+    </div>
+
+    <section id="contactus" class="pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="contact_text">Want to get in touch?</h2>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <div class="card h-80">
+                        <div class="card-body text-center text-white">
+                            <img class="card-img-top mb-3" src="Images/house%20(1).png" alt="Card image cap">
+                            <h4 class="text-uppercase m-0">Address</h4>
+                            <hr class="my-1">
+                            <div class="small text-black-50">4923 Market Street, </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <div class="card h-80">
+                        <div class="card-body text-center text-white">
+                            <img class="card-img-top mb-3" src="Images/email.png" alt="Card image cap">
+                            <h4 class="text-uppercase m-0">Email</h4>
+                            <hr class="my-1">
+                            <div class="small text-black-50">saltedcaramel@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <div class="card h-80">
+                        <div class="card-body text-center text-white">
+                            <img class="card-img-top mb-3" src="Images/delivery-truck.png" alt="Card image cap">
+                            <h4 class="text-uppercase m-0">Phone</h4>
+                            <hr class="my-1">
+                            <div class="small text-black-50">+234 0902 777 5759</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3 mb-3 mb-md-0">
+                    <div class="card h-80">
+                        <div class="card-body text-center text-white">
+                            <img class="card-img-top mb-3" src="Images/delivery-truck.png" alt="Card image cap">
+                            <h4 class="text-uppercase m-0"> Facebook</h4>
+                            <hr class="my-1">
+                            <div class="small text-black-50"> Salted Caramel</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="mt-0 mt-md-3 bg-white small text-center text-dark">
+            <div class="container">
+                <hr>
+                <p>
+                    Copyright &copy; Salted Caramel 2019
+                </p>
+                <hr>
+            </div>
+        </footer>
     </section>
 
-    <section id="contactus">
+    <script src="jQuery/jquery.js.download"></script>
 
-        <button class="collapsible">Contact Us</button>
-        <div class="conten">
-            <ul style="list-style: none;">
-                <li><i class="fa fa-phone"></i><a class="spa" href="tel:08105603432">+(234) 802 062 8265</a></li>
-                <li><i class="fa fa-envelope"></i>
-                    <a class="spa" href="mailto:joychef@gmail.com">joychef@gmail.com</a></li>
-                <li><i class="fa fa-map-marker"></i><a href="#" class="spa">Off Lekki-Ajah Road, Adeba Bustop</a></li>
-            </ul>
-        </div>
+    <script src="jQuery/jquery.flexisel.js"></script>
 
-        <div id="contact">
-            <hr>
-            <h1>Contact Us</h1>
-            <ul style="list-style: none;">
-                <li><i class="fa fa-phone"></i><a class="spa" href="tel:08105603432">+(234) 802 062 8265</a></li>
-                <li><i class="fa fa-envelope"></i>
-                    <a class="spa" href="mailto:joychef@gmail.com">joychef@gmail.com</a></li>
-                <li><i class="fa fa-map-marker"></i><a href="#" class="spa">Off Lekki-Ajah Road, Adeba Bustop</a></li>
-            </ul>
-        </div>
-        <div id="navigation"></div>
-        <div id="gallery"></div>
-    </section>
-
-    <section id="lastContact">
-        <div id="lastContact2">
-            <section id="social_icons">
-                <ul>
-                    <li><a href="https://facebook.com/saltedcaramel"><i class="fab fa-facebook-f _facebook"></i></a></li>
-                    <li><a href="https://twitter.com/saltedcaramel"><i class="fab fa-twitter _twitter"></i></a></li>
-                    <li><a href="https://instagram.com/saltedcaramel"><i class="fab fa-instagram _instagram"></i></a></li>
-                    <li><a href="https://youtube.com/saltedcaramel"><i class="fab fa-youtube _youtube"></i></a></li>
-                </ul>
-            </section>
-
-            <section class="right"><span>&copy; 2019 Salted Caramel. All Rights Reserved.</span></section>
-        </div>
-
-    </section>
-
-
-    <a id="myBtn" class="js-scroll-trigger" href="#begin" title="Go to top"><i class="fa fa-angle-up"></i></a>
-    <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/fullclip.js"></script>
-    <script src="js/Script2.js"></script>
     <script>
-        $('.fullBackground').fullClip({
-            images: ['images/header3.jpg', 'images/header5.jpg'],
-            transitionTime: 800,
-            wait: 3000
+        $(window).load(function() {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 3,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 1
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 2
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 2
+                    }
+                }
+            });
+
         });
-
     </script>
+    <script src="Bootstrap/js/bootstrap.js"></script>
+    <script src="Script.js"></script>
 
-</body>
-
-</html>
+</body></html>
